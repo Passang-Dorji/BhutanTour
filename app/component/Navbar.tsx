@@ -1,6 +1,6 @@
 export default function Navbar() {
 	return (
-		<nav className="bg-gray-600/50 border-gray-200 border-b-2">
+		<nav className="bg-gray-600/50 border-gray-200 border-b-2 sticky top-0">
 			<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 				<a
 					href="https://flowbite.com/"
