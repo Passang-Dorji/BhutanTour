@@ -17,13 +17,6 @@ export default function HomePage() {
 	return (
 		<div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
 			<main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-				{/* <Image
-					className="object-cover -z-2"
-					src="/paro_taktshang.jpg"
-					alt="paro taktshang"å
-					fill
-					priority
-				/> */}
 				<div className="absolute inset-0 -z-10">
 					{images.map((src, i) => (
 						<Image
@@ -47,12 +40,18 @@ export default function HomePage() {
 					</li>
 				</ul>
 				<div className="flex gap-4 items-center flex-col sm:flex-row">
-					<button className=" border-4 border-gray-200 rounded-full px-4 py-2 font-bold bg-gray-600/50">
+					<a
+						href="mailto:pssngdor94@gmail.com.com?subject=Tour%20Booking%20Request"
+						className="border-4 border-gray-200 rounded-full px-6 py-3 font-bold bg-gray-600/50 hover:bg-gray-700/70 transition"
+					>
 						BOOK NOW
-					</button>
-					<button className=" border-b-4 border-gray-200 px-4 py-2 font-bold ">
+					</a>
+					<a
+						href="/about"
+						className="border-b-4 border-gray-200 px-6 py-3 font-bold hover:bg-gray-200/30 transition"
+					>
 						More
-					</button>
+					</a>
 				</div>
 			</main>
 		</div>

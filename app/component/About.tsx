@@ -1,27 +1,54 @@
 "use client";
-import { TextRoll } from "@/components/motion-primitives/text-roll";
 
-export default function About() {
+import Image from "next/image";
+
+export default function AboutPage() {
 	return (
-		<div className="flex justify-center -mt-30 h-60 mb-16">
-			<div className="font-sans bg-white grid grid-rows-[20px_1fr_20px] rounded-t-full items-center justify-items-center p-8 pb-20 sm:p-20 ">
-				<ul className="font-mono text-center sm:text-left bg-gray-900/50 p-4">
-					<li className="mb-2 tracking-[-.01em] text-4xl font-extrabold">
-						<TextRoll>Truly Authentic & Inspiring Holidays</TextRoll>
-					</li>
-					<li className="tracking-[-.01em] border-t-4 text-2xl font-extrabold">
-						<TextRoll>Explore Happiness With Aster Tours & Travel</TextRoll>
-					</li>
-				</ul>
-				<div className="flex gap-4 items-center flex-col sm:flex-row">
-					<button className=" border-4 border-gray-200 rounded-full px-4 py-2 font-bold bg-gray-600/50">
-						BOOK NOW
-					</button>
-					<button className=" border-b-4 border-gray-200 px-4 py-2 font-bold ">
-						More
-					</button>
+		<div className="-mt-24 font-sans min-h-screen flex flex-col items-center justify-center p-8 sm:p-20 bg-gray-50">
+			<main className="max-w-4xl text-center sm:text-left space-y-6">
+				<h1 className="text-4xl font-extrabold text-gray-800 border-b-4 border-gray-300 pb-2">
+					About Us
+				</h1>
+
+				<div className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+					<Image
+						src="/paro_taktshang.jpg"
+						alt="About Aster Tours"
+						fill
+						className="object-cover"
+					/>
 				</div>
-			</div>
+
+				<p className="text-lg text-gray-700 leading-relaxed">
+					At <span className="font-bold">Aster Tours & Travel</span>, we
+					specialize in creating{" "}
+					<span className="italic">authentic and inspiring holidays</span> in
+					the heart of Bhutan. Our team of passionate travel experts is
+					dedicated to showing you the breathtaking landscapes, rich culture,
+					and warm hospitality of the Land of the Thunder Dragon.
+				</p>
+
+				<p className="text-lg text-gray-700 leading-relaxed">
+					Whether it’s hiking to the iconic Tiger’s Nest, exploring ancient
+					fortresses, or immersing yourself in local festivals, we curate each
+					experience to ensure your journey is truly unforgettable.
+				</p>
+
+				<div className="flex gap-4 pt-4">
+					<a
+						href="/contact"
+						className="bg-gray-800 text-white px-6 py-3 rounded-full font-bold shadow hover:bg-gray-900 transition"
+					>
+						Get in Touch
+					</a>
+					<a
+						href="/"
+						className="border-2 border-gray-800 px-6 py-3 rounded-full font-bold hover:bg-gray-800 hover:text-white transition"
+					>
+						Back Home
+					</a>
+				</div>
+			</main>
 		</div>
 	);
 }
