@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
 	return (
@@ -35,18 +36,18 @@ export default function AboutPage() {
 				</p>
 
 				<div className="flex gap-4 pt-4">
-					<a
+					<Link
 						href="/contact"
 						className="bg-gray-800 text-white px-6 py-3 rounded-full font-bold shadow hover:bg-gray-900 transition"
 					>
 						Get in Touch
-					</a>
-					<a
+					</Link>
+					<Link
 						href="/"
 						className="border-2 border-gray-800 px-6 py-3 rounded-full font-bold hover:bg-gray-800 hover:text-white transition"
 					>
 						Back Home
-					</a>
+					</Link>
 				</div>
 			</main>
 		</div>

@@ -18,7 +18,6 @@ export default function ContactPage() {
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
 		alert("Thank you for contacting us! We’ll get back to you soon.");
-		// 🚨 In real app: send formData to backend/email API
 		setFormData({ name: "", email: "", message: "" });
 	};
 
@@ -74,7 +73,7 @@ export default function ContactPage() {
 				</form>
 
 				<div className="text-center text-gray-600 pt-4">
-					<p>📍 Thimphu, Bhutan</p>
+					<p> Thimphu, Bhutan</p>
 					<p>📞 +975 123 4567</p>
 				</div>
 			</main>

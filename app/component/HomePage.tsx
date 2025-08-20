@@ -3,8 +3,12 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { TextRoll } from "@/components/motion-primitives/text-roll";
 
-const images = ["/paro_taktshang.jpg", "/puna_dzong.jpg", "/trongsa_dzong.jpg"];
 export default function HomePage() {
+	const images = [
+		"/paro_taktshang.jpg",
+		"/puna_dzong.jpg",
+		"/trongsa_dzong.jpg",
+	];
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
@@ -41,7 +45,7 @@ export default function HomePage() {
 				</ul>
 				<div className="flex gap-4 items-center flex-col sm:flex-row">
 					<a
-						href="mailto:pssngdor94@gmail.com.com?subject=Tour%20Booking%20Request"
+						href="mailto:pssngdor94@gmail.com...com?subject=Tour%20Booking%20Request"
 						className="border-4 border-gray-200 rounded-full px-6 py-3 font-bold bg-gray-600/50 hover:bg-gray-700/70 transition"
 					>
 						BOOK NOW
