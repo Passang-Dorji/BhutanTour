@@ -16,7 +16,7 @@ export default function AboutPage() {
 						src="/paro_taktshang.jpg"
 						alt="About Aster Tours"
 						fill
-						className="object-cover"
+						className="object-cover glow-on-hover"
 					/>
 				</div>
 
@@ -35,7 +35,7 @@ export default function AboutPage() {
 					experience to ensure your journey is truly unforgettable.
 				</p>
 
-				<div className="flex gap-4 pt-4">
+				<div className="flex gap-4 pt-4 glow-on-hover">
 					<Link
 						href="/contact"
 						className="bg-gray-800 text-white px-6 py-3 rounded-full font-bold shadow hover:bg-gray-900 transition"
@@ -44,7 +44,7 @@ export default function AboutPage() {
 					</Link>
 					<Link
 						href="/"
-						className="border-2 border-gray-800 px-6 py-3 rounded-full font-bold hover:bg-gray-800 hover:text-white transition"
+						className="border-2 border-gray-800 px-6 py-3 rounded-full font-bold hover:bg-gray-800 glow-on-hover hover:text-white transition"
 					>
 						Back Home
 					</Link>
