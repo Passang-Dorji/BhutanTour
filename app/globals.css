@@ -42,8 +42,8 @@ body {
 	height: 20px;
 	background: radial-gradient(
 		circle,
-		rgba(255, 255, 250, 0.9) 0%,
-		rgba(255, 255, 250, 0.2) 90%
+		rgba(96, 165, 250, 0.9) 0%,
+		rgba(96, 165, 250, 0.2) 90%
 	);
 	border-radius: 50%;
 	filter: blur(8px);
