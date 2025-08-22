@@ -4,69 +4,63 @@ export default function Destinations() {
 	const destinations = [
 		{
 			id: 1,
-			name: "Santorini, Greece",
-			image:
-				"https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3",
+			name: "Taktshang, Paro ",
+			image: "/paro_taktshang.jpg",
 			price: "From $1,299",
 			duration: "7 Days",
 			rating: 4.9,
 			description:
-				"Experience the magic of white-washed buildings and stunning sunsets over the Aegean Sea.",
+				"A place where myth meets majesty – Paro Taktsang is Bhutan’s crown jewel waiting for you",
 		},
 		{
 			id: 2,
-			name: "Bali, Indonesia",
-			image:
-				"https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3",
+			name: "Punakha Dzong",
+			image: "puna_dzong.jpg",
 			price: "From $899",
 			duration: "10 Days",
 			rating: 4.8,
-			description:
-				"Discover tropical paradise with ancient temples, lush rice terraces, and pristine beaches.",
+			description: "Stunning fortress built at the confluence of two rivers",
 		},
 		{
 			id: 3,
-			name: "Swiss Alps, Switzerland",
-			image:
-				"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3",
+			name: "Kuensel Phodrang, Thimphu",
+			image: "/buddha.jpg",
 			price: "From $1,899",
 			duration: "8 Days",
 			rating: 4.9,
 			description:
-				"Breathtaking mountain vistas, charming villages, and world-class skiing adventures.",
+				"Perfect for blending modern Bhutanese life with tradition.The only capital city without traffic lights!",
 		},
 		{
 			id: 4,
-			name: "Kyoto, Japan",
-			image:
-				"https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3",
+			name: "Dochula Pass",
+			image: "/dochula.jpg",
 			price: "From $1,599",
 			duration: "9 Days",
 			rating: 4.7,
 			description:
-				"Immerse yourself in ancient traditions, beautiful temples, and serene bamboo forests.",
+				"A high mountain pass with 360° views of the Himalayas.Features the 108 Druk Wangyal Chortens (stupas)",
 		},
 		{
 			id: 5,
-			name: "Machu Picchu, Peru",
+			name: "Bumthang",
 			image:
 				"https://images.unsplash.com/photo-1587595431973-160d0d94add1?ixlib=rb-4.0.3",
 			price: "From $1,199",
 			duration: "6 Days",
 			rating: 4.8,
 			description:
-				"Trek through the Andes to discover the lost city of the Incas and ancient mysteries.",
+				"Known as the spiritual heartland of Bhutan.Stunning valleys, traditional villages, and local festivals",
 		},
 		{
 			id: 6,
-			name: "Maldives",
-			image:
-				"https://images.unsplash.com/photo-1514282401047-d79a71a590e8?ixlib=rb-4.0.3",
+			name: "Phobjikha",
+			image: "phobjikha.jpg",
 			price: "From $2,299",
 			duration: "5 Days",
 			rating: 4.9,
 			description:
-				"Luxury overwater bungalows, crystal-clear waters, and world-class diving experiences.",
+				"A beautiful glacial valley.Famous for black-necked cranes migrating here in winter.",
 		},
 	];
 

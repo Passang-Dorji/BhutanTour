@@ -8,6 +8,7 @@ export default function HomePage() {
 		"/paro_taktshang.jpg",
 		"/puna_dzong.jpg",
 		"/trongsa_dzong.jpg",
+		"/dochula.jpg",
 	];
 	const [index, setIndex] = useState(0);
 
