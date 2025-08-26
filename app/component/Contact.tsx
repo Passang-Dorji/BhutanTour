@@ -5,17 +5,24 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Contact() {
 	const ownerEmail = "drukkinley1989@gmail.com";
+	const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 	const [subject, setSubject] = useState("");
 	const [message, setMessage] = useState("");
 
 	const handleSend = (e: React.FormEvent) => {
 		e.preventDefault();
-
-		const mailtoUrl = `mailto:${ownerEmail}?subject=${encodeURIComponent(
-			subject
-		)}&body=${encodeURIComponent(message)}`;
-		window.open(mailtoUrl, "_blank");
+		if (isMobile) {
+			const mailtoUrl = `mailto:${ownerEmail}?subject=${encodeURIComponent(
+				subject
+			)}&body=${encodeURIComponent(message)}`;
+			window.open(mailtoUrl, "_blank");
+		} else {
+			const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+				ownerEmail
+			)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+			window.open(gmailUrl, "_blank");
+		}
 	};
 
 	return (
