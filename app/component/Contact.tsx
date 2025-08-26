@@ -12,11 +12,10 @@ export default function Contact() {
 	const handleSend = (e: React.FormEvent) => {
 		e.preventDefault();
 
-		const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
-			ownerEmail
-		)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-
-		window.open(gmailUrl, "_blank");
+		const mailtoUrl = `mailto:${ownerEmail}?subject=${encodeURIComponent(
+			subject
+		)}&body=${encodeURIComponent(message)}`;
+		window.open(mailtoUrl, "_blank");
 	};
 
 	return (
