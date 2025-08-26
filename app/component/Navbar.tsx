@@ -44,24 +44,24 @@ export default function Navbar() {
 
 			{/* Mobile Drawer */}
 			{isOpen && (
-				<div className="md:hidden bg-gray-700 text-white px-4 pb-4">
+				<div className="md:hidden bg-gray-700/50 text-white px-4 pb-4 ">
 					<ul className="flex flex-col space-y-4 mt-4 font-bold text-lg">
-						<li>
+						<li className="hover:bg-blue-500/50">
 							<a href="/" onClick={() => setIsOpen(false)}>
 								Home
 							</a>
 						</li>
-						<li>
+						<li className="hover:bg-blue-500/50">
 							<a href="/about" onClick={() => setIsOpen(false)}>
 								About
 							</a>
 						</li>
-						<li>
+						<li className="hover:bg-blue-500/50">
 							<a href="/services" onClick={() => setIsOpen(false)}>
 								Services
 							</a>
 						</li>
-						<li>
+						<li className="hover:bg-blue-500/50">
 							<a href="/contact" onClick={() => setIsOpen(false)}>
 								Contact
 							</a>

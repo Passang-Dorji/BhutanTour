@@ -9,10 +9,10 @@ export default function Footer() {
 			{ name: "Press", href: "#" },
 		],
 		destinations: [
-			{ name: "Europe", href: "#" },
-			{ name: "Asia", href: "#" },
-			{ name: "Americas", href: "#" },
-			{ name: "Africa", href: "#" },
+			{ name: "Paro", href: "#" },
+			{ name: "Thimphu", href: "#" },
+			{ name: "Punakha", href: "#" },
+			{ name: "Bumthang", href: "#" },
 		],
 		support: [
 			{ name: "Help Center", href: "#" },
@@ -23,10 +23,17 @@ export default function Footer() {
 	};
 
 	const socialLinks = [
-		{ icon: Facebook, href: "#", name: "Facebook" },
+		{
+			icon: Facebook,
+			href: "https://www.facebook.com/kinley.dorji.9461",
+			name: "Facebook",
+		},
 		{ icon: Twitter, href: "#", name: "Twitter" },
-		{ icon: Instagram, href: "#", name: "Instagram" },
-		{ icon: Youtube, href: "#", name: "YouTube" },
+		{
+			icon: Instagram,
+			href: "https://www.instagram.com/drukkinley123?igsh=MWFmN3JnYzg1MDNm",
+			name: "Instagram",
+		},
 	];
 
 	return (
@@ -117,7 +124,7 @@ export default function Footer() {
 				<div className="border-t border-gray-800 pt-8 mt-12">
 					<div className="flex flex-col md:flex-row justify-between items-center">
 						<p className="text-gray-400 text-sm mb-4 md:mb-0">
-							© 2024 Discover Paradise. All rights reserved.
+							© 2025 Himalayan Sky view tour. All rights reserved.
 						</p>
 						<div className="flex space-x-6 text-sm">
 							<a
