@@ -19,15 +19,6 @@ export default function Contact() {
 		window.open(gmailUrl, "_blank");
 	};
 
-	// const handleChange = (
-	// 	e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-	// ) => {
-	// 	setFormData({
-	// 		...formData,
-	// 		[e.target.name]: e.target.value,
-	// 	});
-	// };
-
 	return (
 		<section id="contact" className="py-20 bg-white">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

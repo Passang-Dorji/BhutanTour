@@ -1,5 +1,6 @@
-import { MapPin, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
-
+"use client";
+import { MapPin, Facebook, Twitter, Instagram } from "lucide-react";
+import Link from "next/link";
 export default function Footer() {
 	const footerLinks = {
 		company: [
@@ -55,14 +56,14 @@ export default function Footer() {
 							{socialLinks.map((social) => {
 								const IconComponent = social.icon;
 								return (
-									<a
+									<Link
 										key={social.name}
 										href={social.href}
 										className="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition-colors duration-200"
 										aria-label={social.name}
 									>
 										<IconComponent className="h-5 w-5" />
-									</a>
+									</Link>
 								);
 							})}
 						</div>
@@ -74,12 +75,12 @@ export default function Footer() {
 						<ul className="space-y-3">
 							{footerLinks.company.map((link) => (
 								<li key={link.name}>
-									<a
+									<Link
 										href={link.href}
 										className="text-gray-300 hover:text-white transition-colors duration-200"
 									>
 										{link.name}
-									</a>
+									</Link>
 								</li>
 							))}
 						</ul>
@@ -91,12 +92,12 @@ export default function Footer() {
 						<ul className="space-y-3">
 							{footerLinks.destinations.map((link) => (
 								<li key={link.name}>
-									<a
+									<Link
 										href={link.href}
 										className="text-gray-300 hover:text-white transition-colors duration-200"
 									>
 										{link.name}
-									</a>
+									</Link>
 								</li>
 							))}
 						</ul>
@@ -108,12 +109,12 @@ export default function Footer() {
 						<ul className="space-y-3">
 							{footerLinks.support.map((link) => (
 								<li key={link.name}>
-									<a
+									<Link
 										href={link.href}
 										className="text-gray-300 hover:text-white transition-colors duration-200"
 									>
 										{link.name}
-									</a>
+									</Link>
 								</li>
 							))}
 						</ul>
@@ -127,24 +128,24 @@ export default function Footer() {
 							© 2025 Himalayan Sky view tour. All rights reserved.
 						</p>
 						<div className="flex space-x-6 text-sm">
-							<a
+							<Link
 								href="#"
 								className="text-gray-400 hover:text-white transition-colors duration-200"
 							>
 								Privacy Policy
-							</a>
-							<a
+							</Link>
+							<Link
 								href="#"
 								className="text-gray-400 hover:text-white transition-colors duration-200"
 							>
 								Terms of Service
-							</a>
-							<a
+							</Link>
+							<Link
 								href="#"
 								className="text-gray-400 hover:text-white transition-colors duration-200"
 							>
 								Cookie Policy
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>

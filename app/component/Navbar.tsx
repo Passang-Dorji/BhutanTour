@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -9,12 +10,15 @@ export default function Navbar() {
 	return (
 		<nav className="bg-gray-600/50 border-gray-200 border-b-2 sticky top-0 z-10">
 			<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-				<a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+				<Link
+					href="/"
+					className="flex items-center space-x-3 rtl:space-x-reverse"
+				>
 					<img src="/logo.png" className="h-10 w-10 " alt="Logo" />
 					<span className="self-center text-xl font-semibold whitespace-nowrap text-white">
 						Himalayan Sky View Tour
 					</span>
-				</a>
+				</Link>
 
 				<div className="flex md:order-2">
 					<button
@@ -27,18 +31,18 @@ export default function Navbar() {
 
 				{/* Desktop Nav */}
 				<div className="hidden md:flex items-center space-x-8 font-bold text-lg">
-					<a href="/" className="text-white hover:text-blue-300">
+					<Link href="/" className="text-white hover:text-blue-300">
 						Home
-					</a>
-					<a href="/about" className="text-white hover:text-blue-300">
+					</Link>
+					<Link href="/about" className="text-white hover:text-blue-300">
 						About
-					</a>
-					<a href="/services" className="text-white hover:text-blue-300">
+					</Link>
+					<Link href="/services" className="text-white hover:text-blue-300">
 						Services
-					</a>
-					<a href="/contact" className="text-white hover:text-blue-300">
+					</Link>
+					<Link href="/contact" className="text-white hover:text-blue-300">
 						Contact
-					</a>
+					</Link>
 				</div>
 			</div>
 
@@ -47,24 +51,24 @@ export default function Navbar() {
 				<div className="md:hidden bg-gray-700/50 text-white px-4 pb-4 ">
 					<ul className="flex flex-col space-y-4 mt-4 font-bold text-lg">
 						<li className="hover:bg-blue-500/50">
-							<a href="/" onClick={() => setIsOpen(false)}>
+							<Link href="/" onClick={() => setIsOpen(false)}>
 								Home
-							</a>
+							</Link>
 						</li>
 						<li className="hover:bg-blue-500/50">
-							<a href="/about" onClick={() => setIsOpen(false)}>
+							<Link href="/about" onClick={() => setIsOpen(false)}>
 								About
-							</a>
+							</Link>
 						</li>
 						<li className="hover:bg-blue-500/50">
-							<a href="/services" onClick={() => setIsOpen(false)}>
+							<Link href="/services" onClick={() => setIsOpen(false)}>
 								Services
-							</a>
+							</Link>
 						</li>
 						<li className="hover:bg-blue-500/50">
-							<a href="/contact" onClick={() => setIsOpen(false)}>
+							<Link href="/contact" onClick={() => setIsOpen(false)}>
 								Contact
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</div>
