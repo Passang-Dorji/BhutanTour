@@ -6,9 +6,11 @@ import { TextRoll } from "@/components/motion-primitives/text-roll";
 export default function HomePage() {
 	const images = [
 		"/paro_taktshang.jpg",
-		"/puna_dzong.jpg",
+		"/punadzong1.jpeg",
 		"/trongsa_dzong.jpg",
 		"/dochula.jpg",
+		"/punadzongnight.jpeg",
+		"/kajichortoen.jpeg",
 	];
 	const [index, setIndex] = useState(0);
 
@@ -41,7 +43,7 @@ export default function HomePage() {
 						<TextRoll>Truly Authentic & Inspiring Holidays</TextRoll>
 					</li>
 					<li className="tracking-[-.01em] border-t-4 text-2xl font-extrabold">
-						<TextRoll>Explore Happiness With Aster Tours & Travel</TextRoll>
+						<TextRoll>Explore Happiness With Himalayan Sky View Tours</TextRoll>
 					</li>
 				</ul>
 				<div className="flex gap-4 items-center flex-col sm:flex-row">

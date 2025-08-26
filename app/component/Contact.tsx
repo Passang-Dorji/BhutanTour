@@ -1,7 +1,7 @@
 "use client";
-
+import Link from "next/link";
 import { useState } from "react";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircleMoreIcon } from "lucide-react";
 
 export default function Contact() {
 	const ownerEmail = "drukkinley1989@gmail.com";
@@ -145,6 +145,19 @@ export default function Contact() {
 								</div>
 								<div>
 									<h4 className="font-semibold text-gray-900 mb-1">Office</h4>
+									<p className="text-gray-600">Thimphu</p>
+									<p className="text-gray-600">Changlam Plaza</p>
+								</div>
+							</div>
+							<div className="flex items-start space-x-4">
+								<Link
+									href="https://wa.me/+97517478414 "
+									className="bg-blue-100 p-3 rounded-lg"
+								>
+									<MessageCircleMoreIcon className="h-6 w-6 text-green-600" />
+								</Link>
+								<div>
+									<h4 className="font-semibold text-gray-900 mb-1">whatsapp</h4>
 									<p className="text-gray-600">Thimphu</p>
 									<p className="text-gray-600">Changlam Plaza</p>
 								</div>

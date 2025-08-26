@@ -15,7 +15,7 @@ export default function Destinations() {
 		{
 			id: 2,
 			name: "Punakha Dzong",
-			image: "puna_dzong.jpg",
+			image: "punadzong1.jpeg",
 			price: "From $899",
 			duration: "10 Days",
 			rating: 4.8,
@@ -44,8 +44,7 @@ export default function Destinations() {
 		{
 			id: 5,
 			name: "Bumthang",
-			image:
-				"https://images.unsplash.com/photo-1587595431973-160d0d94add1?ixlib=rb-4.0.3",
+			image: "kajichortoen.jpeg",
 			price: "From $1,199",
 			duration: "6 Days",
 			rating: 4.8,
