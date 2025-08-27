@@ -48,10 +48,6 @@ export default function Contact() {
 							onSubmit={handleSend}
 							className="max-w-md mx-auto p-6 bg-white rounded-2xl shadow-lg space-y-4"
 						>
-							<h2 className="text-xl font-bold text-gray-800">
-								Send a Message
-							</h2>
-
 							<div>
 								<label className="block text-sm font-medium text-gray-700">
 									To
