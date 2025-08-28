@@ -1,5 +1,6 @@
+"use client";
 import { Star, MapPin, Calendar } from "lucide-react";
-
+import { useState } from "react";
 export default function Destinations() {
 	const destinations = [
 		{
@@ -61,8 +62,28 @@ export default function Destinations() {
 			description:
 				"A beautiful glacial valley.Famous for black-necked cranes migrating here in winter.",
 		},
+		{
+			id: 7,
+			name: "Kabisa, Punakha",
+			image: "kajichortoen.jpeg",
+			price: "From $2,299",
+			duration: "5 Days",
+			rating: 4.9,
+			description:
+				"A beautiful glacial valley.Famous for black-necked cranes migrating here in winter.",
+		},
 	];
+	const INITIAL_VISIBLE = 3;
+	const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
+	const isAllVisible = visibleCount >= destinations.length;
 
+	const handleToggle = () => {
+		if (isAllVisible) {
+			setVisibleCount(INITIAL_VISIBLE);
+		} else {
+			setVisibleCount((prev) => Math.min(prev + 3, destinations.length));
+		}
+	};
 	return (
 		<section id="destinations" className="py-20 bg-white">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,7 +98,7 @@ export default function Destinations() {
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					{destinations.map((destination) => (
+					{destinations.slice(0, visibleCount).map((destination) => (
 						<div
 							key={destination.id}
 							className="group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
@@ -124,12 +145,16 @@ export default function Destinations() {
 						</div>
 					))}
 				</div>
-
-				<div className="text-center mt-12">
-					<button className="bg-gray-900 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-800 transition-colors duration-200">
-						View All Destinations
-					</button>
-				</div>
+				{destinations.length > INITIAL_VISIBLE && (
+					<div className="text-center mt-12">
+						<button
+							onClick={handleToggle}
+							className="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors duration-200"
+						>
+							{isAllVisible ? "View Less" : "View More Destinations"}
+						</button>
+					</div>
+				)}
 			</div>
 		</section>
 	);
