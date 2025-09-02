@@ -71,26 +71,28 @@ export default function AboutPage() {
 						/>
 					</InfiniteSlider>
 				</div>
+				<div className="mx-auto text-left border-2 border-gray-400 rounded-lg shadow-lg hover:shadow-xl">
+					<p className="text-lg text-gray-700 leading-relaxed p-3">
+						Welcome to{" "}
+						<span className="font-bold">Himalayan Sky View Tours</span>, where
+						we craft{" "}
+						<span className="italic">immersive and unforgettable journeys</span>{" "}
+						through the enchanting kingdom of Bhutan. Guided by passion and
+						expertise, our team is devoted to revealing the country’s majestic
+						landscapes, timeless traditions, and the heartfelt warmth of its
+						people.
+					</p>
 
-				<p className="text-lg text-gray-700 leading-relaxed">
-					Welcome to <span className="font-bold">Himalayan Sky View Tours</span>
-					, where we craft{" "}
-					<span className="italic">immersive and unforgettable journeys</span>{" "}
-					through the enchanting kingdom of Bhutan. Guided by passion and
-					expertise, our team is devoted to revealing the country’s majestic
-					landscapes, timeless traditions, and the heartfelt warmth of its
-					people.
-				</p>
+					<p className="text-lg text-gray-700 leading-relaxed p-3">
+						From the awe-inspiring hike to the sacred Tiger’s Nest to wandering
+						through centuries-old fortresses, or celebrating vibrant local
+						festivals, every experience is thoughtfully curated to leave you
+						with cherished memories and a deeper connection to the Land of the
+						Thunder Dragon.
+					</p>
+				</div>
 
-				<p className="text-lg text-gray-700 leading-relaxed">
-					From the awe-inspiring hike to the sacred Tiger’s Nest to wandering
-					through centuries-old fortresses, or celebrating vibrant local
-					festivals, every experience is thoughtfully curated to leave you with
-					cherished memories and a deeper connection to the Land of the Thunder
-					Dragon.
-				</p>
-
-				<div className="flex gap-4 pt-4 glow-on-hover">
+				<div className="flex gap-4 pt-4 glow-on-hover ml-2">
 					<Link
 						href="/contact"
 						className="bg-blue-600 text-white px-6 py-3 rounded-full font-bold shadow hover:bg-blue-400 hover:text-gray-800 transition"
