@@ -6,7 +6,7 @@ export default function Destinations() {
 		{
 			id: 1,
 			name: "Taktshang, Paro ",
-			image: "/paro_taktshang.jpg",
+			image: "/taktshang1.jpeg",
 			price: "From $1,299",
 			duration: "7 Days",
 			rating: 4.9,
@@ -24,8 +24,8 @@ export default function Destinations() {
 		},
 		{
 			id: 3,
-			name: "Kuensel Phodrang, Thimphu",
-			image: "/buddha.jpg",
+			name: "Thimphu",
+			image: "/thimphu.jpeg",
 			price: "From $1,899",
 			duration: "8 Days",
 			rating: 4.9,
@@ -71,6 +71,16 @@ export default function Destinations() {
 			rating: 4.9,
 			description:
 				"A beautiful glacial valley.Famous for black-necked cranes migrating here in winter.",
+		},
+		{
+			id: 8,
+			name: "Gasa",
+			image: "/gasa.jpeg",
+			price: "From $2,299",
+			duration: "5 Days",
+			rating: 4.9,
+			description:
+				"Set in a stunning glacial valley, Gasa is famed for its therapeutic hot springs, vibrant Tshechu festival, and as the starting point of the legendary Snowman Trek—one of the world’s most challenging Himalayan adventures.",
 		},
 	];
 	const INITIAL_VISIBLE = 3;

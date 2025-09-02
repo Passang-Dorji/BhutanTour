@@ -5,12 +5,12 @@ import { TextRoll } from "@/components/motion-primitives/text-roll";
 
 export default function HomePage() {
 	const images = [
-		"/paro_taktshang.jpg",
+		"/taktshang.jpeg",
 		"/punadzong1.jpeg",
-		"/trongsa_dzong.jpg",
 		"/dochula.jpg",
 		"/punadzongnight.jpeg",
 		"/kajichortoen.jpeg",
+		"/gasa.jpeg",
 	];
 	const [index, setIndex] = useState(0);
 

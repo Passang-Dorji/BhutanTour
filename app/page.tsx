@@ -5,7 +5,6 @@ import Destinations from "./component/Destination";
 import Features from "./component/Features";
 import Testimonials from "./component/Review";
 import ContactPage from "./component/Contact";
-// import { SpinningTextBasic } from "./component/Wordspin";
 export default function Home() {
 	return (
 		<div>
@@ -15,7 +14,6 @@ export default function Home() {
 			<Features />
 			<Testimonials />
 			<ContactPage />
-			{/* <SpinningTextBasic /> */}
 		</div>
 	);
 }

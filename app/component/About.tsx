@@ -1,4 +1,5 @@
 "use client";
+import { InfiniteSlider } from "@/components/motion-primitives/infinite-slider";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -11,40 +12,94 @@ export default function AboutPage() {
 					About Us
 				</h1>
 
-				<div className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
-					<Image
+				<div className="relative w-screen  h-[300px] lg:w-full md:w-screen rounded-2xl overflow-hidden shadow-lg ">
+					{/* <Image
 						src="/paro_taktshang.jpg"
 						alt="About Aster Tours"
 						fill
 						className="object-cover glow-on-hover"
-					/>
+					/> */}
+					<InfiniteSlider speedOnHover={20} gap={20}>
+						<Image
+							src="/thimphu.jpeg"
+							alt="Buddha"
+							width={300}
+							height={300}
+							className="aspect-square rounded-[4px]"
+						/>
+						<Image
+							src="/dochula.jpg"
+							alt="Dochula"
+							width={300}
+							height={300}
+							className="aspect-square rounded-[4px]"
+						/>
+						<Image
+							src="/kajichortoen.jpeg"
+							alt="Yung Lean - Stardust"
+							width={300}
+							height={300}
+							className="aspect-square rounded-[4px]"
+						/>
+						<Image
+							src="/taktshang.jpeg"
+							alt="paro_taktshang"
+							width={300}
+							height={300}
+							className="aspect-square rounded-[4px]"
+						/>
+						<Image
+							src="/punadzong1.jpeg"
+							alt="punadzong"
+							width={300}
+							height={300}
+							className="aspect-square rounded-[4px]"
+						/>
+						<Image
+							src="/punadzongnight.jpeg"
+							alt="night_view"
+							width={300}
+							height={300}
+							className="aspect-square rounded-[4px]"
+						/>
+						<Image
+							src="/stupa.jpeg"
+							alt="stupa"
+							width={300}
+							height={300}
+							className="aspect-square rounded-[4px]"
+						/>
+					</InfiniteSlider>
 				</div>
 
 				<p className="text-lg text-gray-700 leading-relaxed">
-					At <span className="font-bold">Aster Tours & Travel</span>, we
-					specialize in creating{" "}
-					<span className="italic">authentic and inspiring holidays</span> in
-					the heart of Bhutan. Our team of passionate travel experts is
-					dedicated to showing you the breathtaking landscapes, rich culture,
-					and warm hospitality of the Land of the Thunder Dragon.
+					Welcome to <span className="font-bold">Himalayan Sky View Tours</span>
+					, where we craft{" "}
+					<span className="italic">immersive and unforgettable journeys</span>{" "}
+					through the enchanting kingdom of Bhutan. Guided by passion and
+					expertise, our team is devoted to revealing the country’s majestic
+					landscapes, timeless traditions, and the heartfelt warmth of its
+					people.
 				</p>
 
 				<p className="text-lg text-gray-700 leading-relaxed">
-					Whether it’s hiking to the iconic Tiger’s Nest, exploring ancient
-					fortresses, or immersing yourself in local festivals, we curate each
-					experience to ensure your journey is truly unforgettable.
+					From the awe-inspiring hike to the sacred Tiger’s Nest to wandering
+					through centuries-old fortresses, or celebrating vibrant local
+					festivals, every experience is thoughtfully curated to leave you with
+					cherished memories and a deeper connection to the Land of the Thunder
+					Dragon.
 				</p>
 
 				<div className="flex gap-4 pt-4 glow-on-hover">
 					<Link
 						href="/contact"
-						className="bg-gray-800 text-white px-6 py-3 rounded-full font-bold shadow hover:bg-gray-900 transition"
+						className="bg-blue-600 text-white px-6 py-3 rounded-full font-bold shadow hover:bg-blue-400 hover:text-gray-800 transition"
 					>
 						Get in Touch
 					</Link>
 					<Link
 						href="/"
-						className="border-2 border-gray-800 px-6 py-3 rounded-full font-bold hover:bg-gray-800 glow-on-hover hover:text-white transition"
+						className=" bg-blue-600 px-6 py-3 rounded-full font-bold hover:bg-blue-400 hover:text-gray-800 transition"
 					>
 						Back Home
 					</Link>
