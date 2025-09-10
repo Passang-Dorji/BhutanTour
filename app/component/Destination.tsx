@@ -95,10 +95,13 @@ export default function Destinations() {
 		}
 	};
 	return (
-		<section id="destinations" className="py-20 bg-white">
+		<section
+			id="destinations"
+			className="py-20 bg-gradient-to-b from-sky-300 via-sky-200 to-sky-100"
+		>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="text-center mb-16">
-					<h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+					<h2 className="text-2xl md:text-5xl lg:text-4xl font-bold text-gray-900 mb-4">
 						Popular Destinations
 					</h2>
 					<p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -111,7 +114,7 @@ export default function Destinations() {
 					{destinations.slice(0, visibleCount).map((destination) => (
 						<div
 							key={destination.id}
-							className="group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+							className="group cursor-pointer bg-white/50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
 						>
 							<div className="relative overflow-hidden">
 								<div
@@ -126,7 +129,7 @@ export default function Destinations() {
 										</span>
 									</div>
 								</div>
-								<div className="absolute bottom-4 left-4 bg-blue-600 text-white px-4 py-2 rounded-full font-semibold">
+								<div className="absolute bottom-4 left-4 bg-[#1f455d] text-white px-4 py-2 rounded-full font-semibold">
 									{destination.price}
 								</div>
 							</div>
@@ -148,7 +151,7 @@ export default function Destinations() {
 									{destination.description}
 								</p>
 
-								<button className="w-full bg-blue-600 text-white py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-200">
+								<button className="w-full bg-[#1f455d]  text-white py-3 rounded-full font-semibold hover:bg-[#5a8894] hover:text-black transition-colors duration-200">
 									Learn More
 								</button>
 							</div>
@@ -159,7 +162,7 @@ export default function Destinations() {
 					<div className="text-center mt-12">
 						<button
 							onClick={handleToggle}
-							className="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors duration-200"
+							className="bg-[#1f455d] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#5a8894] hover:text-black transition-colors duration-200"
 						>
 							{isAllVisible ? "View Less" : "View More Destinations"}
 						</button>

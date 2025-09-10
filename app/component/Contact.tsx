@@ -26,7 +26,10 @@ export default function Contact() {
 	};
 
 	return (
-		<section id="contact" className="py-20 bg-white">
+		<section
+			id="contact"
+			className="py-20 bg-gradient-to-b from-sky-300 via-sky-200 to-sky-100"
+		>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="text-center mb-16">
 					<h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -39,7 +42,7 @@ export default function Contact() {
 				</div>
 
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-					<div className="bg-gray-50 p-8 rounded-2xl">
+					<div className="bg-gradient-to-b from-sky-300 via-sky-200 to-sky-100 p-8 rounded-2xl shadow-xl">
 						<h3 className="text-2xl font-semibold text-gray-900 mb-6 ml-12">
 							Send us a Message
 						</h3>
@@ -90,7 +93,7 @@ export default function Contact() {
 
 							<button
 								type="submit"
-								className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
+								className="w-full bg-[#1f455d] text-white py-2 px-4 rounded-lg hover:bg-[#5a8894] hover:text-black transition"
 							>
 								Send Message
 							</button>
