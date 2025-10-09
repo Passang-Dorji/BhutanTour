@@ -6,14 +6,36 @@ import Features from "./component/Features";
 import Testimonials from "./component/Review";
 import ContactPage from "./component/Contact";
 export default function Home() {
+	// return (
+	// 	<div>
+	// 		<HomePage />
+	// 		<AboutPage />
+	// 		<Destinations />
+	// 		<Features />
+	// 		<Testimonials />
+	// 		<ContactPage />
+	// 	</div>
+	// );
 	return (
 		<div>
-			<HomePage />
-			<AboutPage />
-			<Destinations />
-			<Features />
-			<Testimonials />
-			<ContactPage />
+			<section id="home">
+				<HomePage />
+			</section>
+			<section id="about">
+				<AboutPage />
+			</section>
+			<section id="destinations">
+				<Destinations />
+			</section>
+			<section id="features">
+				<Features />
+			</section>
+			<section id="testimonials">
+				<Testimonials />
+			</section>
+			<section id="contact">
+				<ContactPage />
+			</section>
 		</div>
 	);
 }

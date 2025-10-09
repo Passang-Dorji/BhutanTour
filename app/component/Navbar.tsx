@@ -7,6 +7,12 @@ import Link from "next/link";
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 
+	const scrollToSection = (id: string) => {
+		const section = document.getElementById(id);
+		if (section) {
+			section.scrollIntoView({ behavior: "smooth" });
+		}
+	};
 	return (
 		<nav className="bg-gray-600/50 border-gray-200 border-b-2 sticky top-0 z-10">
 			<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -31,45 +37,72 @@ export default function Navbar() {
 
 				{/* Desktop Nav */}
 				<div className="hidden md:flex items-center space-x-8 font-bold text-lg">
-					<Link href="/" className="text-white hover:text-blue-300">
+					<button
+						onClick={() => scrollToSection("home")}
+						className="hover:text-blue-300 text-white"
+					>
 						Home
-					</Link>
-					<Link href="/about" className="text-white hover:text-blue-300">
+					</button>
+					<button
+						onClick={() => scrollToSection("about")}
+						className="hover:text-blue-300 text-white"
+					>
 						About
-					</Link>
-					<Link href="/services" className="text-white hover:text-blue-300">
-						Services
-					</Link>
-					<Link href="/contact" className="text-white hover:text-blue-300">
+					</button>
+
+					<button
+						onClick={() => scrollToSection("destinations")}
+						className="hover:text-blue-300 text-white"
+					>
+						Destinations
+					</button>
+
+					<button
+						onClick={() => scrollToSection("features")}
+						className="hover:text-blue-300 text-white"
+					>
+						Features
+					</button>
+
+					<button
+						onClick={() => scrollToSection("testimonials")}
+						className="hover:text-blue-300 text-white"
+					>
+						Testimonials
+					</button>
+					<button
+						onClick={() => scrollToSection("contact")}
+						className="hover:text-blue-300 text-white"
+					>
 						Contact
-					</Link>
+					</button>
 				</div>
 			</div>
-
 			{/* Mobile Drawer */}
 			{isOpen && (
-				<div className="md:hidden bg-gray-700/50 text-white px-4 pb-4 ">
+				<div className="md:hidden bg-gray-700/50 text-white px-4 pb-4">
 					<ul className="flex flex-col space-y-4 mt-4 font-bold text-lg">
-						<li className="hover:bg-blue-500/50">
-							<Link href="/" onClick={() => setIsOpen(false)}>
-								Home
-							</Link>
-						</li>
-						<li className="hover:bg-blue-500/50">
-							<Link href="/about" onClick={() => setIsOpen(false)}>
-								About
-							</Link>
-						</li>
-						<li className="hover:bg-blue-500/50">
-							<Link href="/services" onClick={() => setIsOpen(false)}>
-								Services
-							</Link>
-						</li>
-						<li className="hover:bg-blue-500/50">
-							<Link href="/contact" onClick={() => setIsOpen(false)}>
-								Contact
-							</Link>
-						</li>
+						{[
+							{ name: "Home", id: "home" },
+							{ name: "About", id: "about" },
+							{ name: "Destinations", id: "destinations" },
+							{ name: "Features", id: "features" },
+							{ name: "Testimonials", id: "testimonials" },
+							{ name: "Contact", id: "contact" },
+						].map(({ name, id }) => (
+							<li key={id} className="hover:bg-blue-500/50 rounded-md p-2">
+								<button
+									onClick={() => {
+										const section = document.getElementById(id);
+										if (section) section.scrollIntoView({ behavior: "smooth" });
+										setIsOpen(false);
+									}}
+									className="w-full text-left"
+								>
+									{name}
+								</button>
+							</li>
+						))}
 					</ul>
 				</div>
 			)}
