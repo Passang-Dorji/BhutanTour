@@ -114,18 +114,26 @@ export default function Contact() {
 						</div>
 
 						<div className="space-y-6">
-							<div className="flex items-start space-x-4">
-								<div className="bg-blue-100 p-3 rounded-lg">
+							<div className="flex items-start space-x-4 cursor-pointer hover:bg-blue-200 p-2 rounded-lg transition">
+								<a
+									href="tel:+97517478414"
+									className="bg-blue-100 p-3 rounded-lg  transition-colors"
+								>
 									<Phone className="h-6 w-6 text-blue-600" />
-								</div>
+								</a>
 								<div>
 									<h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-									<p className="text-gray-600">+ 975 17478414</p>
+									<a
+										href="tel:+97517478414"
+										className="text-gray-600 hover:text-blue-600 transition-colors"
+									>
+										+975 17478414
+									</a>
 									<p className="text-gray-500 text-sm">Mon-Fri 9AM-6PM GMT+6</p>
 								</div>
 							</div>
 
-							<div className="flex items-start space-x-4">
+							<div className="flex items-start space-x-4 cursor-pointer hover:bg-blue-200 p-2 rounded-lg transition">
 								<div className="bg-blue-100 p-3 rounded-lg">
 									<Mail className="h-6 w-6 text-blue-600" />
 								</div>
@@ -138,7 +146,15 @@ export default function Contact() {
 								</div>
 							</div>
 
-							<div className="flex items-start space-x-4">
+							<div
+								onClick={() =>
+									window.open(
+										"https://www.google.com/maps?q=Changlam+Plaza,+Thimphu,+Bhutan",
+										"_blank"
+									)
+								}
+								className="flex items-start space-x-4 cursor-pointer hover:bg-blue-200 p-2 rounded-lg transition"
+							>
 								<div className="bg-blue-100 p-3 rounded-lg">
 									<MapPin className="h-6 w-6 text-blue-600" />
 								</div>
@@ -148,7 +164,8 @@ export default function Contact() {
 									<p className="text-gray-600">Changlam Plaza</p>
 								</div>
 							</div>
-							<div className="flex items-start space-x-4">
+
+							<div className="flex items-start space-x-4 cursor-pointer hover:bg-blue-200 p-2 rounded-lg transition">
 								<Link
 									href="https://wa.me/+97517478414 "
 									className="bg-blue-100 p-3 rounded-lg"

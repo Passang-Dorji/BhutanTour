@@ -48,7 +48,7 @@ export default function HomePage() {
 				</ul>
 				<div className="flex gap-4 items-center flex-col sm:flex-row">
 					<a
-						href="mailto:pssngdor94@gmail.com...com?subject=Tour%20Booking%20Request"
+						href="mailto:drukkinley1989@gmail.com...com?subject=Tour%20Booking%20Request"
 						className="border-4 border-gray-200 rounded-full px-6 py-3 font-bold bg-gray-600/50 hover:bg-gray-700/70 transition"
 					>
 						BOOK NOW
