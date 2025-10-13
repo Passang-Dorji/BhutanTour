@@ -73,7 +73,6 @@ export default function AboutPage() {
 						providing an unforgettable experience of the region&apos;s natural
 						beauty and cultural heritage
 					</p>
-					<div className="absolute top-20 left-10 w-40 h-20 bg-white rounded-full blur-2xl opacity-70" />
 					<h1 className="text-gray-700 font-bold p-3 text-lg">
 						Key Features & Offerings
 					</h1>

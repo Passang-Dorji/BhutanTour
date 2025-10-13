@@ -39,11 +39,20 @@ export default function HomePage() {
 					))}
 				</div>
 				<ul className="font-mono text-center sm:text-left bg-gray-900/50 p-4">
-					<li className="mb-2 tracking-[-.01em] text-4xl font-extrabold">
-						<TextRoll>Truly Authentic & Inspiring Holidays</TextRoll>
+					<li className="mb-2 tracking-[-.01em] text-3xl sm:text-4xl font-extrabold">
+						<TextRoll>Truly Authentic & Inspiring </TextRoll>
+					</li>
+					<li className="mb-2 tracking-[-.01em] text-3xl sm:text-4xl font-extrabold">
+						<TextRoll> Holidays</TextRoll>
 					</li>
 					<li className="tracking-[-.01em] border-t-4 text-2xl font-extrabold">
-						<TextRoll>Explore Happiness With Himalayan Sky View Tours</TextRoll>
+						<TextRoll>Explore Happiness</TextRoll>
+					</li>
+					<li className="tracking-[-.01em] text-2xl font-extrabold">
+						<TextRoll>With Himalayan Sky</TextRoll>
+					</li>
+					<li className="tracking-[-.01em] text-2xl font-extrabold">
+						<TextRoll>View Tours</TextRoll>
 					</li>
 				</ul>
 				<div className="flex gap-4 items-center flex-col sm:flex-row">
@@ -52,12 +61,6 @@ export default function HomePage() {
 						className="border-4 border-gray-200 rounded-full px-6 py-3 font-bold bg-gray-600/50 hover:bg-gray-700/70 transition"
 					>
 						BOOK NOW
-					</a>
-					<a
-						href="/about"
-						className="border-b-4 border-gray-200 px-6 py-3 font-bold hover:bg-gray-200/30 transition"
-					>
-						More
 					</a>
 				</div>
 			</main>
