@@ -5,6 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutPage() {
+	const scrollToSection = (id: string) => {
+		const section = document.getElementById(id);
+		if (section) {
+			section.scrollIntoView({ behavior: "smooth" });
+		}
+	};
 	return (
 		<div className="-mt-24 font-sans min-h-screen flex flex-col items-center justify-center p-8 sm:p-20 bg-gradient-to-b from-sky-300 via-sky-200 to-sky-100">
 			<main className="max-w-4xl text-center sm:text-left space-y-6">
@@ -108,18 +114,18 @@ export default function AboutPage() {
 				</div>
 
 				<div className="flex gap-4 pt-4 glow-on-hover ml-2">
-					<Link
-						href="/contact"
+					<button
+						onClick={() => scrollToSection("contact")}
 						className="bg-[#1f455d] text-white px-6 py-3 rounded-full font-bold shadow hover:bg-[#5a8894] hover:text-gray-800 transition"
 					>
 						Get in Touch
-					</Link>
-					<Link
-						href="/"
+					</button>
+					<button
+						onClick={() => scrollToSection("home")}
 						className=" bg-[#1f455d] px-6 py-3 rounded-full font-bold hover:bg-[#5a8894] hover:text-gray-800 transition"
 					>
 						Back Home
-					</Link>
+					</button>
 				</div>
 			</main>
 		</div>

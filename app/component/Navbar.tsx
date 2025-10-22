@@ -22,7 +22,7 @@ export default function Navbar() {
 				>
 					<img src="/logo.png" className="h-10 w-10 " alt="Logo" />
 					<span className="self-center text-xl font-semibold whitespace-nowrap text-white">
-						Himalayan Sky View Tour
+						Himalayan Sky View Tours
 					</span>
 				</Link>
 
@@ -65,17 +65,17 @@ export default function Navbar() {
 					</button>
 
 					<button
-						onClick={() => scrollToSection("testimonials")}
-						className="hover:text-blue-300 text-white"
-					>
-						Testimonials
-					</button>
-					<button
 						onClick={() => scrollToSection("contact")}
 						className="hover:text-blue-300 text-white"
 					>
 						Contact
 					</button>
+					{/* <button
+						onClick={() => scrollToSection("testimonials")}
+						className="hover:text-blue-300 text-white"
+					>
+						Testimonials
+					</button> */}
 				</div>
 			</div>
 			{/* Mobile Drawer */}

@@ -170,7 +170,7 @@ export default function Contact() {
 									href="https://wa.me/+97517478414 "
 									className="bg-blue-100 p-3 rounded-lg"
 								>
-									<MessageCircleMoreIcon className="h-6 w-6 text-green-600" />
+									<MessageCircleMoreIcon className="h-6 w-6 text-green-600 animate-bounce" />
 								</Link>
 								<div>
 									<h4 className="font-semibold text-gray-900 mb-1">whatsapp</h4>

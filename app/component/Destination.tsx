@@ -7,8 +7,8 @@ export default function Destinations() {
 			id: 1,
 			name: "Taktshang, Paro ",
 			image: "/taktshang1.jpeg",
-			price: "From $1,299",
-			duration: "7 Days",
+			// price: "From $1,299",
+			duration: "1 Days",
 			rating: 4.9,
 			description:
 				"A place where myth meets majesty – Paro Taktsang is Bhutan’s crown jewel waiting for you",
@@ -17,8 +17,8 @@ export default function Destinations() {
 			id: 2,
 			name: "Punakha Dzong",
 			image: "punadzong1.jpeg",
-			price: "From $899",
-			duration: "10 Days",
+			// price: "From $899",
+			duration: "2 Days",
 			rating: 4.8,
 			description: "Stunning fortress built at the confluence of two rivers",
 		},
@@ -26,8 +26,8 @@ export default function Destinations() {
 			id: 3,
 			name: "Thimphu",
 			image: "/thimphu.jpeg",
-			price: "From $1,899",
-			duration: "8 Days",
+			// price: "From $1,899",
+			duration: "1 Days",
 			rating: 4.9,
 			description:
 				"Perfect for blending modern Bhutanese life with tradition.The only capital city without traffic lights!",
@@ -36,8 +36,8 @@ export default function Destinations() {
 			id: 4,
 			name: "Dochula Pass",
 			image: "/dochula.jpg",
-			price: "From $1,599",
-			duration: "9 Days",
+			// price: "From $1,599",
+			duration: "1 Days",
 			rating: 4.7,
 			description:
 				"A high mountain pass with 360° views of the Himalayas.Features the 108 Druk Wangyal Chortens (stupas)",
@@ -46,8 +46,8 @@ export default function Destinations() {
 			id: 5,
 			name: "Bumthang",
 			image: "kajichortoen.jpeg",
-			price: "From $1,199",
-			duration: "6 Days",
+			// price: "From $1,199",
+			duration: "2 Days",
 			rating: 4.8,
 			description:
 				"Known as the spiritual heartland of Bhutan.Stunning valleys, traditional villages, and local festivals",
@@ -56,8 +56,8 @@ export default function Destinations() {
 			id: 6,
 			name: "Phobjikha",
 			image: "phobjikha.jpg",
-			price: "From $2,299",
-			duration: "5 Days",
+			// price: "From $2,299",
+			duration: "2 Days",
 			rating: 4.9,
 			description:
 				"A beautiful glacial valley.Famous for black-necked cranes migrating here in winter.",
@@ -66,8 +66,8 @@ export default function Destinations() {
 			id: 7,
 			name: "Kabisa, Punakha",
 			image: "kajichortoen.jpeg",
-			price: "From $2,299",
-			duration: "5 Days",
+			// price: "From $2,299",
+			duration: "2 Days",
 			rating: 4.9,
 			description:
 				"A beautiful glacial valley.Famous for black-necked cranes migrating here in winter.",
@@ -76,8 +76,8 @@ export default function Destinations() {
 			id: 8,
 			name: "Gasa",
 			image: "/gasa.jpeg",
-			price: "From $2,299",
-			duration: "5 Days",
+			// price: "From $2,299",
+			duration: "2 Days",
 			rating: 4.9,
 			description:
 				"Set in a stunning glacial valley, Gasa is famed for its therapeutic hot springs, vibrant Tshechu festival, and as the starting point of the legendary Snowman Trek—one of the world’s most challenging Himalayan adventures.",
@@ -129,9 +129,9 @@ export default function Destinations() {
 										</span>
 									</div>
 								</div>
-								<div className="absolute bottom-4 left-4 bg-[#1f455d] text-white px-4 py-2 rounded-full font-semibold">
+								{/* <div className="absolute bottom-4 left-4 bg-[#1f455d] text-white px-4 py-2 rounded-full font-semibold">
 									{destination.price}
-								</div>
+								</div> */}
 							</div>
 
 							<div className="p-6">
