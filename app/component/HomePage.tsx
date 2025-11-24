@@ -38,7 +38,7 @@ export default function HomePage() {
 						/>
 					))}
 				</div>
-				<ul className="font-mono text-center sm:text-left bg-gray-900/50 p-4">
+				<ul className="font-mono text-center sm:text-left bg-gray-900/50 p-4 text-white dark:text-gray-100">
 					<li className="mb-2 tracking-[-.01em] text-3xl sm:text-4xl font-extrabold">
 						<TextRoll>Truly Authentic & Inspiring </TextRoll>
 					</li>

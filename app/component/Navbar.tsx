@@ -87,7 +87,7 @@ export default function Navbar() {
 							{ name: "About", id: "about" },
 							{ name: "Destinations", id: "destinations" },
 							{ name: "Features", id: "features" },
-							{ name: "Testimonials", id: "testimonials" },
+							// { name: "Testimonials", id: "testimonials" },
 							{ name: "Contact", id: "contact" },
 						].map(({ name, id }) => (
 							<li key={id} className="hover:bg-blue-500/50 rounded-md p-2">
